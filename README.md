@@ -72,17 +72,29 @@ An AI-powered gym management and fitness planning platform built using the MERN 
 
 ---
 
-Backend Setup
- -cd Backend
- -npm install
- -npm run dev
+# ⚙️ Installation & Setup
 
+## 🔧 Backend Setup
 
-Frontend Setup
- -cd frontend
- -npm install
- -npm run dev
+```bash
+cd Backend
+npm install
+npx nodemon server.js
 
+The backend server will start on:
+ http://localhost:3000
+
+## 💻 Frontend Setup
+
+Navigate to the frontend directory and install dependencies:
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+The frontend application will run on:
+  http://localhost:5173
 
 # 📂 Project Structure
 
