@@ -1,0 +1,125 @@
+.ai-page1{
+min-height:100vh;      
+background:url("photos/aiform.png") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:flex-start;   
+font-family:sans-serif;
+position:relative;
+padding:60px 0;         
+overflow-y:auto;      
+}
+.ai-overlay1{
+background:rgba(0,0,0,0.75);
+padding:40px;
+border-radius:25px;
+width:950px;
+color:white;
+text-align:center;
+position:relative;
+z-index:5; 
+}
+
+.ai-title1{
+font-size:42px;
+letter-spacing:1px;
+}
+
+.ai-title1 span{
+color:#ff6a00;
+}
+
+.ai-sub1{
+margin-bottom:30px;
+opacity:.8;
+}
+
+.ai-card1{
+border:2px solid #ff6a00;
+border-radius:25px;
+padding:30px;
+background:rgba(20,20,20,.85);
+}
+
+.ai-grid1{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.ai-grid1 input,
+.ai-grid1 select,
+.ai-grid1 textarea{
+padding:14px;
+border-radius:10px;
+border:none;
+background:#2a2a2a;
+color:white;
+font-size:14px;
+}
+
+.ai-grid1 textarea{
+grid-column:span 2;
+height:80px;
+}
+
+.ai-btn1{
+margin-top:25px;
+background:#ff6a00;
+border:none;
+padding:15px 40px;
+font-size:18px;
+border-radius:40px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.ai-btn1:hover{
+transform:scale(1.05);
+}
+
+
+/* RIGHT IMAGE */
+.ai-right-img{
+position:absolute;
+top:-60px;        /* MOVE FROM TOP */
+right:0px;     /* PUSH MORE RIGHT */
+height:115vh;     /* BIGGER FOR OVERLAP EFFECT */
+z-index:1;        /* BEHIND FORM */
+pointer-events:none;
+opacity:.95;
+}
+
+.input-box{
+display:flex;
+align-items:center;
+background:#2a2a2a;
+padding:12px;
+border-radius:10px;
+gap:10px;
+}
+
+.field-group{
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.field-label{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+color:#ddd;
+font-weight:500;
+}
+
+.full-width{
+grid-column:span 2;
+}
+
+.icon2{
+color:#ff6a00;
+font-size:16px;
+}

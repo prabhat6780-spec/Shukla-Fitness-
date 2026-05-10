@@ -1,0 +1,54 @@
+/* MAIN NAV */
+.shop-category-nav {
+  display: flex;
+  justify-content: center;   /* ✅ CENTER */
+  align-items: center;
+
+  gap: 30px;
+  padding: 14px 20px;
+
+  background: #ffffff;
+
+  /* ✅ LINE BETWEEN NAVBARS */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* HIDE SCROLLBAR */
+.shop-category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* ITEM */
+.shop-category-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* HOVER */
+.shop-category-item:hover {
+  color: #ff6600;
+}
+
+/* 🔥 UNDERLINE HOVER EFFECT */
+.shop-category-item::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff6600;
+  transition: 0.3s;
+}
+
+.shop-category-item:hover::after {
+  width: 100%;
+}

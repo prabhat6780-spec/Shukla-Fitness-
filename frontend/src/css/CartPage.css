@@ -1,0 +1,259 @@
+.cart-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background: #f5f5f6;
+}
+
+/* LEFT */
+.cart-left {
+  flex: 2;
+}
+
+/* HEADER BOX */
+.cart-header {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* SELECT ALL WRAPPER */
+.cart-select-all {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+/* SELECT TEXT */
+.cart-selected-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* CHECKBOX STYLE */
+.cart-select-all input {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6b00;
+}
+
+/* SINGLE PRODUCT CARD */
+.cart-item {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+/* REMOVE ANIMATION */
+.cart-item.removing {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+
+/* PRODUCT IMAGE */
+.cart-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* PRODUCT TEXT */
+.cart-details h4 {
+  margin-bottom: 5px;
+}
+
+/* QUANTITY WRAPPER */
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+/* BUTTON */
+.cart-qty button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* VALUE */
+.cart-qty span {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* PRICE CONTAINER */
+.cart-price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* NEW PRICE */
+.cart-new-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+/* OLD PRICE */
+.cart-old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+/* DISCOUNT */
+.cart-discount {
+  color: #ff6b00;   /* 🔥 ORANGE */
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* REMOVE BUTTON */
+.cart-remove {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.cart-remove:hover {
+  color: red;
+}
+
+/* EMPTY CART WRAPPER */
+.empty-cart {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+/* MAIN WRAPPER */
+.empty-cart-pro {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ICON */
+.empty-cart-icon {
+  font-size: 70px;
+  background: #fff1e6;
+  padding: 25px;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+/* TITLE */
+.empty-cart-pro h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* TEXT */
+.empty-cart-pro p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.continue-btn {
+  margin-top: 10px;
+  padding: 14px 28px;
+  background: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOUNCE ICON */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.cart-address-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff6f0;
+  border: 1px solid #ffd8c2;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-address-left p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.cart-address-text {
+  color: #555;
+  font-size: 13px;
+}
+
+/* BUTTON */
+.change-address-btn {
+  border: 1px solid #ff6b00;
+  background: white;
+  color: #ff6b00;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.change-address-btn:hover {
+  background: #fff0e6;
+}

@@ -1,0 +1,95 @@
+.amo-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* TOP BAR */
+.amo-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.amo-topbar input {
+  padding: 10px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.amo-topbar button {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FILTER */
+.amo-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.amo-filters button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.amo-filters .active {
+  background: #ff6b00;
+  color: white;
+}
+
+/* TABLE */
+.amo-table {
+  border-top: 1px solid #eee;
+}
+
+.amo-head,
+.amo-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 12px;
+  align-items: center;
+}
+
+.amo-head {
+  font-weight: 600;
+  background: #f9f9f9;
+}
+
+.amo-row {
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.amo-row:hover {
+  background: #f5f5f5;
+}
+
+/* STATUS */
+.amo-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.amo-badge.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.amo-badge.expired {
+  background: #fdecea;
+  color: #c62828;
+}

@@ -1,0 +1,208 @@
+/* Add to your Admin CSS file */
+.add-exercise-page {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+.ae-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 12px;
+
+  /* modern shadow */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  /* optional border */
+  border: 1px solid #eee;
+}
+
+.ae-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.ae-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ae-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ae-row-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.ae-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ae-field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+.ae-field input,
+.ae-field select,
+.ae-field textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+  background: #fff;
+}
+
+.ae-field input:focus,
+.ae-field select:focus,
+.ae-field textarea:focus {
+  border-color: #e85d04;
+}
+
+.ae-field textarea {
+  resize: vertical;
+}
+.ae-upload-box {
+  border: 2px dashed #e85d04;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ae-upload-box:hover {
+  background: #fff7f2;
+}
+
+.ae-upload-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px;
+}
+
+.ae-upload-sub {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 12px;
+}
+.ae-preview-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+.ae-gif-preview {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.ae-preview-item {
+  position: relative;
+}
+
+.ae-remove-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ae-remove-btn:hover {
+  background: #e60000;
+}
+
+.ae-submit-btn {
+  background: #e85d04;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: opacity 0.2s;
+}
+
+.ae-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ae-input-icon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 10px;
+  background: #fff;
+}
+
+.ae-input-icon svg {
+  color: orange;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.ae-input-icon input,
+.ae-input-icon select {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 6px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.ae-input-icon textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 6px;
+  font-size: 14px;
+  resize: vertical;
+  background: transparent;
+}
+
+.ae-input-icon:focus-within {
+  border-color: #e85d04;
+}
+
+.ae-input-icon.textarea {
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.ae-upload-icon {
+  font-size: 22px;
+  color: #e85d04;
+  margin-bottom: 8px;
+}

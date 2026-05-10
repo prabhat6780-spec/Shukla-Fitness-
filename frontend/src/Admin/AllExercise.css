@@ -1,0 +1,215 @@
+.all-ex-page {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.all-ex-container {
+  width: 100%;
+  max-width: 1100px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.all-ex-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.ex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ex-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  transition: 0.2s;
+   position: relative;
+}
+
+.ex-card:hover {
+  transform: translateY(-4px);
+}
+
+.ex-gif {
+  width: 100%;
+  height: auto;        /* ✅ auto height */
+  max-height: 300px;   /* optional limit */
+  object-fit: contain; /* ✅ show full image */
+  background: #f5f5f5; /* nice empty space */
+  border-radius: 8px;
+}
+.ex-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.ex-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.ex-footer {
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  color: white;
+}
+
+.badge.beginner {
+  background: green;
+}
+
+.badge.intermediate {
+  background: orange;
+}
+
+.badge.advanced {
+  background: red;
+}
+
+/* 🔥 top-right buttons */
+
+
+/* Action container */
+.ex-actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+/* Buttons */
+.ex-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+/* Icon size */
+.ex-btn svg {
+  font-size: 14px;
+}
+
+/* Edit */
+.ex-btn-edit {
+  background: #1a73e8;
+  color: white;
+}
+
+.ex-btn-edit:hover {
+  background: #0f5ad1;
+  transform: scale(1.08);
+}
+
+/* Delete */
+.ex-btn-delete {
+  background: #e53935;
+  color: white;
+}
+
+.ex-btn-delete:hover {
+  background: #c62828;
+  transform: scale(1.08);
+}
+
+.ex-actions {
+  opacity: 0;
+}
+
+.ex-card:hover .ex-actions {
+  opacity: 1;
+}
+
+/* HEADER */
+.all-ex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ADD BUTTON */
+.add-ex-btn1 {
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-ex-btn1:hover {
+  background: #e65c00;
+}
+
+/* SEARCH */
+.all-ex-search-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.search-box1 {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  background: #f5f5f5;
+  border-radius: 30px;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+/* ORANGE BORDER ON FOCUS 🔥 */
+.search-box1:focus-within {
+  border: 2px solid #ff6b00;
+  background: #fff;
+}
+
+/* INPUT */
+.search-box1 input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* ICON LEFT */
+.search-icon1 {
+  color: #888;
+  font-size: 16px;
+}
+
+/* CLEAR BUTTON RIGHT */
+.clear-icon1 {
+  color: #ff6b00;
+  cursor: pointer;
+  font-size: 14px;
+}

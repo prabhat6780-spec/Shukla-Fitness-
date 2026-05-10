@@ -1,0 +1,321 @@
+/* Layout */
+.orders-layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+}
+
+/* Content */
+.orders-content {
+  margin-left: 10px;
+  width: 100%;
+}
+
+/* Container */
+.orders-container {
+  padding: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Title */
+.orders-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Count */
+.orders-count {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card */
+/* Card */
+.orders-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.orders-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.orders-header p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Status Badge */
+.orders-status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.orders-status.pending {
+  background: #fff8e1;
+  color: #b26a00;
+}
+
+.orders-status.processing {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.orders-status.delivered {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Product Row */
+.orders-product {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 0;
+}
+
+/* Image */
+.orders-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fafafa;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+/* Product Info */
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-qty {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Price */
+.orders-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+}
+
+/* Footer */
+.orders-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Total */
+.orders-footer span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Button */
+.view-btn {
+  padding: 8px 16px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #333;
+}
+/* Loading / Empty */
+.orders-loading,
+.orders-empty {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Meta text (size/color) */
+.product-meta {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+/* Highlight value */
+.product-meta span {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* 🎨 Color box */
+.color-box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  margin: 0 6px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+
+
+
+/* Layout */
+.od-layout {
+  display: flex;
+}
+
+/* Content area */
+.od-content {
+  margin-left: 10px;
+  padding: 25px;
+  width: 100%;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Title */
+.od-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Card box */
+.od-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Header info */
+.od-header p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Status badge */
+.od-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.od-status.pending {
+  background: #fff4d6;
+  color: #b7791f;
+}
+
+.od-status.processing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.od-status.delivered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* Product list */
+.od-products {
+  margin-top: 10px;
+}
+
+/* Single product */
+.od-product {
+  display: flex;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Image */
+.od-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f3f4f6;
+  padding: 8px;
+}
+
+/* Info */
+.od-info h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.od-info p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Price */
+.od-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Color circle */
+.od-color-box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 6px;
+  border: 1px solid #ccc;
+}
+
+/* Address */
+.od-address p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* Loading */
+.od-loading {
+  text-align: center;
+  margin-top: 40px;
+}

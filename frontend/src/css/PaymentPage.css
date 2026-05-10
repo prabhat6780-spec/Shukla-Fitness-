@@ -1,0 +1,200 @@
+/* MAIN CONTAINER */
+.pay-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+/* LEFT SIDE */
+.pay-left {
+  flex: 2;
+}
+
+/* BOX */
+.pay-box {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.pay-sidebar {
+  width: 220px;
+  border-right: 1px solid #eee;
+  background: #fafafa;
+}
+
+.pay-option {
+  padding: 16px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.pay-option:hover {
+  background: #fff4e6;
+}
+
+.pay-option.active {
+  background: #fff4e6;
+  color: #ff6b00;
+  font-weight: 600;
+}
+
+/* RIGHT CONTENT */
+.pay-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* INPUT */
+.pay-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* CARD ROW */
+.pay-card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-card-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+.pay-btn {
+  background: #ff6b00;
+  color: white;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background: #e65c00;
+}
+
+/* GIFT CARD */
+.pay-gift {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+/* PAYMENT ICONS */
+.pay-footer {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.pay-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.pay-icon-box {
+  width: 80px;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.pay-icon-box img {
+  max-width: 80%;
+  max-height: 70%;
+}
+
+
+/* COD BOX */
+.pay-cod-box {
+  padding: 20px;
+}
+
+/* TITLE */
+.pay-cod-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* OPTION ROW */
+.pay-cod-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #eee;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* RADIO */
+.pay-cod-option input {
+  accent-color: #ff6b00;
+}
+
+/* TEXT */
+.pay-cod-text {
+  flex: 1;
+}
+
+.pay-cod-main {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pay-cod-sub {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ICON */
+.pay-cod-icon {
+  font-size: 22px;
+}
+
+/* BUTTON */
+.pay-cod-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b00; /* Myntra pink */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-cod-btn:hover {
+  background: #e65c00;
+}
+.pay-cod-text input {
+  margin-top: 8px;
+}

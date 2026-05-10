@@ -1,0 +1,88 @@
+.ai-page{
+background:#000;
+font-family:sans-serif;
+color:white;
+margin-top:0;
+margin-bottom:0;
+}
+
+/* ===== HERO ===== */
+.ai-hero{
+min-height:100vh;
+height:auto;
+width:100%;
+background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),url("/photos/ai-bg1.png") no-repeat ;
+background-size:cover;
+background-position:center -280px;
+display:flex;
+flex-direction:column;
+justify-content:center;       
+align-items:center;
+
+margin:0;
+padding:0;
+}
+
+.ai-content{
+max-width:1000px;
+text-align:center;
+padding-top:250px; 
+}
+
+.ai-title{
+font-size:70px;
+font-weight:900;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.ai-title span{
+color:#ff6b00;
+}
+
+/* ⭐ SUBTEXT */
+.ai-content p{
+font-size:20px;
+color:#ddd;
+max-width:700px;
+margin:0 auto;
+}
+/* ===== VIDEO SECTION ===== */
+
+.ai-video-section{
+background:#000;
+padding-top:0;
+padding-bottom:60px;   /* ⭐ SPACE AFTER VIDEO */
+text-align:center;
+}
+
+.ai-video{
+width:100%;
+height:auto;
+display:block;
+box-shadow:0 20px 60px rgba(0,0,0,0.6);   /* light shadow */
+}
+.ai-btn-wrap{
+background:#000;
+display:flex;
+justify-content:center;   /* ⭐ CENTER */
+align-items:center;
+padding:40px 0 120px 0;   /* ⭐ SPACE BELOW BUTTON */
+}
+
+.ai-btn{
+background:#ff6b00;
+border:none;
+padding:18px 50px;
+font-size:22px;
+font-weight:600;
+color:white;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+.ai-btn:hover{
+background:#e55d00;
+transform:scale(1.07);
+}

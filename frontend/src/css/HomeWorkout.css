@@ -1,0 +1,203 @@
+.home-page {
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background */
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.7);
+}
+
+/* Overlay gradient */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0.2) 100%
+  );
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+  max-width: 600px;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.hero-content h1 span {
+  color: #ff3f6c;
+}
+
+/* Text */
+.hero-content p {
+  margin-top: 20px;
+  color: #bbb;
+  font-size: 18px;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.primary-btn {
+  background: linear-gradient(45deg, #ff3f6c, #ff1e50);
+  border: none;
+  padding: 14px 30px;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #fff;
+  padding: 14px 30px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔥 SCROLL INDICATOR */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 25px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.scroll-indicator span::after {
+  content: "";
+  width: 5px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 0; top: 8px; }
+  50% { opacity: 1; }
+  100% { opacity: 0; top: 20px; }
+}
+
+/* 🔥 STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background: #111;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 28px;
+  color: #ff3f6c;
+}
+
+/* 🔥 FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255,255,255,0.08);
+}
+
+/* 🔥 VIDEO SECTION */
+.workout-video {
+  padding: 80px 20px;
+  text-align: center;
+  background: #000;
+}
+
+.workout-video h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.workout-video p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* VIDEO BOX */
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* VIDEO STYLE */
+.video-player {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(255, 63, 108, 0.2);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.video-player:hover {
+  transform: scale(1.02);
+}

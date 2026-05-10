@@ -1,0 +1,121 @@
+/* Layout */
+.md2-layout {
+  display: flex;
+}
+
+/* Content */
+.md2-content {
+  margin-left: 10px;
+  padding: 25px;
+  width: 100%;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Title */
+.md2-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Box */
+.md2-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.md2-header p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Status */
+.md2-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.md2-status.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.md2-status.expired {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Product */
+.md2-product {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Image */
+.md2-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f3f4f6;
+  padding: 8px;
+}
+
+/* Info */
+.md2-info h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.md2-info p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Price */
+.md2-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Actions */
+.md2-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Buttons */
+.md2-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.md2-btn.renew {
+  background: #ff6b00;
+  color: white;
+}
+
+.md2-btn.invoice {
+  background: #2563eb;
+  color: white;
+}
+
+/* Loading */
+.md2-loading {
+  text-align: center;
+  margin-top: 40px;
+}

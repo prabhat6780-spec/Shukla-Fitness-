@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+
+# env
+.env
+
+# uploads
+uploads
+
+# build
+dist
+build
+
+# vscode
+.vscode
+
+# logs
+*.log

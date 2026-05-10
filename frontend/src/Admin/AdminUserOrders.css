@@ -1,0 +1,142 @@
+/* PAGE */
+.auo-page {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.auo-card {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.auo-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* EMPTY */
+.auo-empty {
+  text-align: center;
+  color: #777;
+}
+
+/* LIST */
+.auo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/* HEADER */
+.auo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.auo-count {
+  font-size: 13px;
+  background: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* SEARCH */
+.auo-search-box {
+  margin-bottom: 15px;
+}
+
+.auo-search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ITEM */
+.auo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f9fafb;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);}
+
+/* LEFT */
+.auo-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.auo-id {
+  font-weight: 600;
+}
+
+.auo-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* CENTER */
+.auo-center {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* RIGHT */
+.auo-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* STATUS */
+.auo-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* COLORS */
+.auo-status.pending { background: #eef2ff; color: #3b5bdb; }
+.auo-status.processing { background: #fff4e6; color: #ff8800; }
+.auo-status.shipped { background: #e6f0ff; color: #0066ff; }
+.auo-status.delivered { background: #e6fff4; color: #00a86b; }
+.auo-status.cancelled { background: #ffe6e6; color: #ff3c00; }
+
+/* VIEW ICON */
+.auo-view {
+  margin-left: 10px;
+  color: #ff6b00;
+}
+
+/* EMPTY */
+.auo-empty {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}

@@ -1,0 +1,592 @@
+.aud-page{
+padding:25px;
+}
+
+/* TOP */
+/* TOP WRAPPER */
+.aud-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* LEFT SIDE */
+.aud-left {
+  display: flex;
+  gap: 20px;
+}
+
+/* AVATAR */
+.aud-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* INFO */
+.aud-info h2 {
+  margin-bottom: 5px;
+}
+
+/* ROW WITH ICON */
+.aud-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* ICON COLOR */
+.aud-row svg {
+  color: #ff6b00;
+}
+
+/* BADGES */
+.aud-badges {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.role1 {
+  background: #ffe9dd;
+  color: #ff3c00;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.active1 {
+  background: #e6fff4;
+  color: #00a86b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* RIGHT SIDE */
+/* RIGHT PANEL */
+.aud-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+/* INFO ROW */
+.aud-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.aud-info-row svg {
+  color: #ff6b00;
+  font-size: 18px;
+}
+/* WRAP */
+.aud-login-wrap {
+  align-items: flex-start;
+}
+
+/* STACK TEXT */
+.aud-login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* LAST LOGIN */
+.last-login-text {
+  color: #444;
+}
+
+/* NOT CLAIMED BADGE 🔥 */
+.not-claimed {
+  background: #fff4e6;
+  color: #ff8800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* STATUS BOX 🔥 */
+.aud-status-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e6fff4;
+  color: #00a86b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  width: 100%;
+  justify-content: center;
+}
+
+.aud-status-box svg {
+  font-size: 18px;
+}
+
+/* ACTIONS */
+.top-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+
+/* EDIT BUTTON 🔥 */
+.edit-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(90deg,#ff7a00,#ff3c00);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn1 svg {
+  font-size: 14px;
+}
+
+.edit-btn1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,60,0,0.3);
+}
+
+/* DELETE BUTTON */
+.delete-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: red;
+  border: 1px solid red;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.delete-btn1:hover {
+  background: red;
+  color: white;
+}
+/* TABS */
+/* WRAPPER */
+.aud-tabs2 {
+  display: flex;
+  gap: 25px;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* TAB */
+.aud-tab3 {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.aud-tab3:hover {
+  background: #f3f3f3;
+}
+
+/* ACTIVE TAB 🔥 */
+.aud-tab3.active {
+  background: linear-gradient(90deg,#ff7a00,#ff3c00);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(255,122,0,0.3);
+}
+
+/* GRID */
+.aud-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+/* CARD */
+.aud-card2 {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+/* TITLE */
+.aud-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.aud-card-title svg {
+  color: #ff6b00;
+}
+
+/* GRID */
+.aud-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ITEM */
+.aud-info-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.aud-info-item:hover {
+  background: #f9f9f9;
+}
+
+/* ICON */
+.aud-info-item svg {
+  color: #ff6b00;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* TEXT */
+.aud-info-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+.aud-info-item strong {
+  display: block;
+  font-size: 15px;
+  color: #111;
+}
+
+/* FULL WIDTH */
+.aud-info-item.full {
+  grid-column: span 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .aud-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* CARD */
+.aud-card3 {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+/* GRID */
+.aud-measure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ITEM */
+.aud-measure-item {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.aud-measure-item:hover {
+  background: #f3f3f3;
+}
+
+/* ICON */
+.aud-measure-item svg {
+  color: #ff6b00;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+/* TEXT */
+.aud-measure-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+.aud-measure-item strong {
+  display: block;
+  font-size: 16px;
+  color: #111;
+}
+
+/* BMI SPECIAL 🔥 */
+.aud-measure-item.bmi {
+  background: #fff4e6;
+}
+
+.aud-measure-item.bmi strong {
+  color: #ff6b00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .aud-measure-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+.aud-card4 {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+/* GRID */
+.aud-fitness-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ITEM */
+.aud-fitness-item {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.aud-fitness-item:hover {
+  background: #f3f3f3;
+}
+
+/* ICON */
+.aud-fitness-item svg {
+  color: #ff6b00;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+/* TEXT */
+.aud-fitness-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+.aud-fitness-item strong {
+  display: block;
+  font-size: 16px;
+  color: #111;
+}
+
+/* FULL WIDTH */
+.aud-fitness-item.full {
+  grid-column: span 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .aud-fitness-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* WRAPPER */
+.aud-actions2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-top: 25px;
+
+  /* 🔥 IMPORTANT */
+  flex-wrap: nowrap;       /* ❌ no wrapping */
+  overflow-x: auto;        /* scroll if overflow */
+}
+
+/* SCROLL HIDE */
+.aud-actions-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* BUTTON */
+.aud-btn {
+ display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #f5f6fa;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ICON */
+.aud-btn svg {
+  color: #ff6b00;
+  font-size: 16px;
+}
+
+/* HOVER */
+.aud-btn:hover {
+  background: #ececec;
+  transform: translateY(-2px);
+}
+
+/* DANGER BUTTON 🔥 */
+.aud-btn.danger {
+  background: #ffeaea;
+  color: #ff3c00;
+}
+
+.aud-btn.danger svg {
+  color: #ff3c00;
+}
+
+.aud-btn.danger:hover {
+  background: #ff3c00;
+  color: white;
+}
+
+.aud-btn.danger:hover svg {
+  color: white;
+}
+/* COMMON BUTTON STYLE */
+.aud-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ICON STYLE */
+.aud-btn svg {
+  font-size: 16px;
+}
+
+/* MAKE ADMIN 🔵 */
+.aud-btn.admin-add {
+  background: #e6f7ff;
+  color: #0077cc;
+}
+
+.aud-btn.admin-add svg {
+  color: #0077cc;
+}
+
+.aud-btn.admin-add:hover {
+  background: #0077cc;
+  color: white;
+}
+
+.aud-btn.admin-add:hover svg {
+  color: white;
+}
+
+/* REMOVE ADMIN 🟠 */
+.aud-btn.admin-remove {
+  background: #fff4e6;
+  color: #ff8800;
+}
+
+.aud-btn.admin-remove svg {
+  color: #ff8800;
+}
+
+.aud-btn.admin-remove:hover {
+  background: #ff8800;
+  color: white;
+}
+
+.aud-btn.admin-remove:hover svg {
+  color: white;
+}
+
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ACTIVE */
+.status.active {
+  background: #e6fff4;
+  color: #00a86b;
+}
+
+/* PENDING */
+.status.pending {
+  background: #fff4e6;
+  color: #ff8800;
+}
+
+/* EXPIRED */
+.status.expired {
+  background: #ffeaea;
+  color: #ff3c00;
+}
+
+/* REJECTED */
+.status.rejected {
+  background: #f0f0f0;
+  color: #666;
+}

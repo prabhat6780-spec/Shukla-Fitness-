@@ -1,0 +1,443 @@
+/* ===================== PAGE ===================== */
+.ft-page {
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* ===================== HERO ===================== */
+.ft-hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ft-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.80)),
+    url("/photos/trial.png") center / cover no-repeat;
+  z-index: 0;
+}
+
+/* animated orange glow pulse */
+.ft-hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255,107,0,0.18) 0%, transparent 70%);
+  animation: pulse-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { opacity: 0.5; }
+  to   { opacity: 1;   }
+}
+
+.ft-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding: 0 30px;
+  animation: fade-up 0.8s ease both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.ft-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #ff6b00;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ft-hero-content h1 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+.ft-hero-content h1 span {
+  color: #ff6b00;
+}
+
+.ft-hero-sub {
+  font-size: 19px;
+  color: #bbb;
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+
+.ft-hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ===================== BUTTONS ===================== */
+.ft-btn-primary {
+  display: inline-block;
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 16px 44px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.ft-btn-primary:hover {
+  background: #e55e00;
+  transform: scale(1.06);
+}
+
+.ft-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid #555;
+  padding: 16px 44px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.ft-btn-ghost:hover {
+  border-color: #ff6b00;
+  color: #ff6b00;
+}
+
+/* ===================== PERKS ===================== */
+.ft-perks {
+  padding: 100px 60px;
+  text-align: center;
+  background: #080b10;
+}
+
+.ft-perks h2 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.ft-perks h2 span {
+  color: #ff6b00;
+}
+
+.ft-perks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ft-perk-card {
+  background: #0f141b;
+  border: 2px solid #1e2530;
+  border-radius: 18px;
+  padding: 36px 28px;
+  text-align: left;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.ft-perk-card:hover {
+  border-color: #ff6b00;
+  transform: translateY(-6px);
+}
+
+.ft-perk-icon {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.ft-perk-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.ft-perk-card p {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
+}
+
+/* ===================== FORM SECTION ===================== */
+.ft-form-section {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  padding: 100px 80px;
+  background: #000;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.ft-form-left {
+  flex: 1;
+  padding-top: 10px;
+  position: sticky;
+  top: 100px;
+}
+
+.ft-form-left h2 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 16px 0 20px;
+}
+
+.ft-form-left h2 span {
+  color: #ff6b00;
+}
+
+.ft-form-sub {
+  font-size: 16px;
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.ft-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ft-trust-item {
+  font-size: 15px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ft-trust-item::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ff6b00;
+  flex-shrink: 0;
+}
+
+/* ===================== FORM ===================== */
+.ft-form-right {
+  flex: 1;
+}
+
+.ft-form {
+  background: #0f141b;
+  border: 2px solid #1e2530;
+  border-radius: 24px;
+  padding: 50px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ft-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ft-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.ft-field input,
+.ft-field select {
+  background: #161c25;
+  border: 2px solid #252b36;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  padding: 14px 18px;
+  outline: none;
+  transition: border-color 0.25s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ft-field input::placeholder {
+  color: #444;
+}
+
+.ft-field input:focus,
+.ft-field select:focus {
+  border-color: #ff6b00;
+}
+
+.ft-field select option {
+  background: #161c25;
+}
+
+.ft-submit-btn {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.25s, transform 0.2s;
+  width: 100%;
+}
+
+.ft-submit-btn:hover:not(:disabled) {
+  background: #e55e00;
+  transform: scale(1.02);
+}
+
+.ft-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ft-form-note {
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+  margin-top: -8px;
+}
+
+/* ===================== BOTTOM STRIP ===================== */
+.ft-bottom-strip {
+  background: #080b10;
+  border-top: 1px solid #1a1f28;
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+/* ===================== SUCCESS PAGE ===================== */
+.ft-success {
+  background: #000;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.ft-success-box {
+  text-align: center;
+  max-width: 520px;
+  padding: 60px 50px;
+  background: #0f141b;
+  border: 2px solid #ff6b00;
+  border-radius: 24px;
+  animation: fade-up 0.6s ease both;
+}
+
+.ft-success-icon {
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+.ft-success-box h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: white;
+}
+
+.ft-success-box h1 span {
+  color: #ff6b00;
+}
+
+.ft-success-box p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.ft-success-sub {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 36px;
+}
+
+.ft-success-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+  .ft-hero-content h1 { font-size: 52px; }
+  .ft-perks-grid      { grid-template-columns: repeat(2, 1fr); }
+  .ft-form-section    { flex-direction: column; padding: 60px 30px; gap: 50px; }
+  .ft-form-left       { position: static; }
+  .ft-form-left h2    { font-size: 38px; }
+  .ft-form            { padding: 36px 26px; }
+}
+
+@media (max-width: 560px) {
+  .ft-hero-content h1 { font-size: 38px; }
+  .ft-perks-grid      { grid-template-columns: 1fr; }
+  .ft-perks           { padding: 60px 24px; }
+  .ft-perks h2        { font-size: 30px; }
+}
+
+/* ── CHECKING STATE ── */
+.ft-checking {
+  background: #000;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 16px;
+}
+
+/* ── PLAN BADGE in success screen ── */
+.ft-trial-plan-badge {
+  display: inline-block;
+  background: #1e2530;
+  color: #f7c873;
+  border: 1px solid #f7c873;
+  padding: 6px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px auto;
+}
+
+/* ── FIELD NOTE ── */
+.ft-field-note {
+  font-size: 12px;
+  color: #f7c873;
+  margin-top: 6px;
+}

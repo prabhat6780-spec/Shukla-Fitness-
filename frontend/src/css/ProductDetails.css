@@ -1,0 +1,360 @@
+/* 🔥 MAIN CONTAINER */
+.pd-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* LEFT */
+.pd-left {
+  width: 50%;
+}
+
+.pd-main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pd-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pd-thumb {
+  width: 60px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* RIGHT */
+.pd-right {
+  width: 50%;
+}
+.pd-right > * {
+  margin-bottom: 20px;
+}
+.pd-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.pd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pd-share-btn {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.pd-share-btn:hover {
+  background: #e5e5e5;
+}
+/* PRICE */
+.pd-price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.pd-new {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pd-old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.pd-off {
+  color: green;
+  font-weight: 500;
+}
+
+/* SECTION */
+.pd-section {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* COLORS */
+.pd-colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.pd-color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.pd-color.active {
+  border: 2px solid black;
+}
+
+/* SIZE */
+/* CONTAINER */
+.pd-sizes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* EACH SIZE BOX */
+.pd-size-box {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: white;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.pd-size-box:hover {
+  border-color: black;
+}
+
+/* ACTIVE */
+.pd-size-box.active {
+  background: #2e7d32;
+  color: white;
+  border-color: #2e7d32;
+  font-weight: 500;
+}
+
+/* QUANTITY */
+/* CONTAINER */
+.pd-quantity-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.pd-qty-btn {
+  width: 50px;
+  height: 45px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.pd-qty-btn:hover {
+  background: #f5f5f5;
+}
+
+/* VALUE BOX */
+.pd-qty-value {
+  width: 50px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: 500;
+  background: #fafafa;
+}
+/* BUTTON */
+.pd-add-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.pd-qty-btn:disabled {
+  opacity: 0.5;
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* DELIVERY */
+/* SECTION */
+.pd-delivery {
+  margin-top: 30px;
+}
+
+.pd-delivery-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+/* ICON WRAPPER */
+.pd-icon {
+  width: 35px;
+  height: 35px;
+  background: #f0f0f0;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* PINCODE ALIGN */
+.pd-pincode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 10px;
+  width: 320px;
+}
+
+.pd-pincode input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+.pd-pincode button {
+  border: none;
+  background: transparent;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* MAIN BOX */
+.pd-delivery-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+/* LIGHT GREY CARDS */
+.pd-delivery-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+.pd-accordion {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.pd-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pd-plus {
+  font-size: 18px;
+}
+
+.pd-accordion-content {
+  padding-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* recommadations*/
+.pd-recommend-wrapper {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* CENTER CONTENT */
+.pd-recommend {
+  width: 100%;
+  padding: 0 50px; /* small padding only */
+}
+
+.pd-rec-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* GRID */
+.pd-recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.pd-recommend-card {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 🔥 KEY LINE */
+  height: 100%; /* ensure full height */
+}
+
+.pd-recommend-card img {
+   width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.pd-recommend-card:hover {
+  transform: translateY(-5px);
+}
+
+/* NAME */
+.pd-rec-name {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #333;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+

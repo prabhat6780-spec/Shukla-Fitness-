@@ -1,0 +1,105 @@
+.shukla-welcome-container{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+.shukla-overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.75);
+}
+
+.shukla-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.shukla-logo{
+  width:400px;     /* increased */
+  margin-bottom:-10px;
+  /* ⭐ removes dark box feel */
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.shukla-title-orange{
+  font-size:52px;
+  font-weight:900;
+  color:#ff7a00;
+  margin:0;
+  letter-spacing:4px;
+}
+
+.shukla-title-white{
+  font-size:52px;
+  font-weight:900;
+  color:white;
+  margin:0;
+  letter-spacing:6px;
+}
+
+.shukla-tagline{
+  margin-top:18px;
+  font-size:18px;
+  color:#ccc;
+}
+
+/* ⭐ LOADER */
+.shukla-loader{
+  margin-top:40px;
+  width:65px;
+  height:65px;
+  border:6px solid #222;
+  border-top:6px solid #ff7a00;
+  border-radius:50%;
+  animation:shuklaSpin 1s linear infinite;
+}
+.shukla-fade{
+  animation:shuklaFade .8s forwards;
+}
+
+@keyframes shuklaSpin{
+  100%{ transform:rotate(360deg); }
+}
+
+@keyframes shuklaZoom{
+  from{ transform:scale(.6); opacity:0; }
+  to{ transform:scale(1); opacity:1; }
+}
+
+@keyframes shuklaFade{
+  to{ opacity:0; visibility:hidden; }
+}
+
+
+/* ⭐ FRONT PAGE BLUR BACKGROUND */
+.welcome-video{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:blur(3px) brightness(0.4);
+  transform:scale(1.1);
+}
+/* ⭐ DARK OVERLAY */
+.shukla-overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.75);
+}
+
+/* ⭐ CENTER CONTENT */
+.shukla-content{
+  position:relative;
+  z-index:2;
+}

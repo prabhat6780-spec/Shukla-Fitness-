@@ -1,0 +1,51 @@
+.aumos-container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.aumos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aumos-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.aumos-card:hover {
+  background: #f1f5f9;
+}
+
+.aumos-left h3 {
+  margin: 0;
+}
+
+.aumos-right {
+  text-align: right;
+}
+
+.aumos-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.aumos-badge.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.aumos-badge.expired {
+  background: #fdecea;
+  color: #c62828;
+}

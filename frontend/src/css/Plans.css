@@ -1,0 +1,144 @@
+/* ⭐ FULL PAGE WRAPPER */
+.profile-layout1{
+  display:flex;
+  width:100%;
+  min-height:100vh;
+  background:#f6f7fb;
+}
+
+/* ⭐ SIDEBAR FIXED */
+.profile-sidebar{
+  width:260px;
+  min-width:260px;
+  height:100vh;
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-right:1px solid #eee;
+}
+
+/* ⭐ CONTENT SHOULD TAKE FULL REMAINING SPACE */
+.bp-content{
+  flex:1;
+  width:calc(100% - 260px);
+  padding:40px;
+}
+/* ⭐ MAIN WRAPPER */
+.bp-content{
+  padding:40px;
+  background:#f6f7fb;
+  min-height:100vh;
+}
+
+/* ⭐ TITLE */
+.bp-title{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:25px;
+  color:#222;
+}
+
+/* ⭐ CARD */
+.bp-card{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  margin-bottom:20px;
+  border:1px solid #eee;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.bp-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* ⭐ HEADER */
+.bp-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:14px;
+}
+
+.bp-name{
+  font-size:20px;
+  font-weight:700;
+  color:#ff3c00;
+}
+
+.bp-date{
+  font-size:12px;
+  background:#fff1ea;
+  color:#ff3c00;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+/* ⭐ DETAILS */
+.bp-info{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.bp-badge{
+  background:#f1f3f6;
+  padding:8px 15px;
+  border-radius:10px;
+  font-size:13px;
+  font-weight:600;
+  color:#333;
+}
+
+/* ⭐ ACTIONS */
+.bp-actions{
+  margin-top:20px;
+  display:flex;
+  gap:12px;
+}
+
+.bp-open{
+  background:linear-gradient(135deg,#ff3c00,#cc2200);
+  border:none;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.bp-open:hover{
+  transform:scale(1.05);
+}
+
+.bp-delete{
+  background:#fff;
+  border:1px solid #ff3c00;
+  color:#ff3c00;
+  padding:10px 20px;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.bp-delete:hover{
+  background:#ff3c00;
+  color:#fff;
+}
+
+/* ⭐ EMPTY */
+.bp-empty{
+  background:#fff;
+  padding:50px;
+  border-radius:18px;
+  text-align:center;
+  color:#888;
+  font-weight:600;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}

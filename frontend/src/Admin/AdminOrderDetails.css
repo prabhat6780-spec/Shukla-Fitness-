@@ -1,0 +1,285 @@
+/* ===== PAGE ===== */
+.aod-page {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.aod-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* ===== TITLE ===== */
+.aod-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.aod-subtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* ===== ROW ===== */
+.aod-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* ===== GRID ===== */
+.aod-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ===== BOX ===== */
+.aod-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* ===== HEADING ===== */
+.aod-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ===== ITEMS ===== */
+.aod-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #f8f9fb;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.aod-item-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.aod-item-details {
+  flex: 1;
+}
+
+.aod-item-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.aod-item-qty {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* ===== PRICE ===== */
+.aod-price-box {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aod-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.aod-old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.aod-discount {
+  background: #ffe8e8;
+  color: #ff3c00;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===== STATUS BADGE ===== */
+.aod-status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== STATUS SELECT ===== */
+.aod-status-box {
+  margin-top: 20px;
+}
+
+.aod-status-select {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== STATUS COLORS ===== */
+.aod-pending { background:#eef2ff; color:#3b5bdb; }
+.aod-processing { background:#fff4e6; color:#ff8800; }
+.aod-shipped { background:#e6f0ff; color:#0066ff; }
+.aod-delivered { background:#e6fff4; color:#00a86b; }
+.aod-cancelled { background:#ffe6e6; color:#ff3c00; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .aod-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* PAGE */
+.aorders-page {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* WHITE CARD  AdminOrders*/
+/* PAGE */
+.aop-page {
+  padding: 30px;
+}
+
+/* STATS */
+.aop-stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.aop-stat {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.aop-stat.delivered {
+  color: green;
+}
+
+.aop-stat.pending {
+  color: orange;
+}
+
+/* FILTERS */
+.aop-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.aop-filters input,
+.aop-filters select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* CARD */
+.aop-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.aop-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.aop-table th {
+  background: #f5f6fa;
+  padding: 12px;
+  text-align: left;
+}
+
+.aop-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* STATUS */
+.aop-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.aop-status.pending {
+  background: #eef2ff;
+  color: #3b5bdb;
+}
+
+.aop-status.processing {
+  background: #fff4e6;
+  color: #ff8800;
+}
+
+.aop-status.shipped {
+  background: #e6f0ff;
+  color: #0066ff;
+}
+
+.aop-status.delivered {
+  background: #e6fff4;
+  color: #00a86b;
+}
+
+.aop-status.cancelled {
+  background: #ffe6e6;
+  color: #ff3c00;
+}
+
+/* BUTTON */
+.aop-view-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b00;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.aop-view-btn:hover {
+  background: #e65c00;
+}
+

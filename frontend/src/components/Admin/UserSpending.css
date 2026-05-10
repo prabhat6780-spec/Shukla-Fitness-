@@ -1,0 +1,53 @@
+.aus-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.aus-card h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.aus-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.aus-box {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.aus-box span {
+  font-size: 13px;
+  color: #666;
+}
+
+.aus-box h2 {
+  margin-top: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.aus-box h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.aus-box.total {
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  color: #fff;
+}
+
+.aus-box.membership {
+  background: #eef2ff;
+}
+.aus-box.orders {
+  background: #ecfdf5;
+  color: #065f46;
+}

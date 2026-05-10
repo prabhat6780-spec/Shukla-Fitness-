@@ -1,0 +1,211 @@
+/* ─── PAGE ─── */
+.products-list-page {
+  padding: 30px;
+}
+
+/* ─── TITLE ─── */
+.products-list-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+.products-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-product-btn {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.add-product-btn:hover {
+  background: #e65c00;
+}
+
+/* ─── SEARCH WRAPPER ─── */
+.products-list-search-wrapper {
+  position: relative;
+  width: 380px;
+  margin-bottom: 30px;
+}
+
+/* SEARCH INPUT */
+.products-list-search {
+  width: 100%;
+  padding: 12px 45px; /* space for icons */
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* SEARCH FOCUS */
+.products-list-search:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.25);
+}
+
+/* SEARCH ICON */
+.search-icon3 {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* CLEAR ICON */
+.clear-icon3 {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff6600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ─── GRID ─── */
+.products-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* ─── CARD ─── */
+.products-list-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* HOVER EFFECT */
+.products-list-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+/* ─── IMAGE BOX (BIGGER + NO BG) ─── */
+.products-list-img-box {
+  height: 260px;              /* 🔥 bigger */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ─── IMAGE ─── */
+.products-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* 🔥 fills fully (no white space) */
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.products-list-card:hover .products-list-img {
+  transform: scale(1.05);
+}
+
+/* NAME */
+.products-list-name {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+
+/* PRICE */
+.products-list-price {
+  margin-top: 6px;
+  color: #ff6600;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* IMAGE BOX */
+.products-list-img-box {
+  height: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* IMAGE */
+.products-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+/* 🔥 OVERLAY */
+.products-list-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* SHOW OVERLAY ON HOVER */
+.products-list-img-box:hover .products-list-overlay {
+  opacity: 1;
+}
+
+/* BUTTONS */
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: 0.3s;
+}
+
+/* EDIT */
+.edit-btn {
+  background: #ff6600;
+}
+
+/* DELETE */
+.delete-btn {
+  background: #e74c3c;
+}
+
+/* HOVER EFFECT */
+.edit-btn:hover {
+  transform: scale(1.1);
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+/* IMAGE ZOOM */
+.products-list-img-box:hover .products-list-img {
+  transform: scale(1.05);
+}

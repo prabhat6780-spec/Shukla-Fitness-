@@ -1,0 +1,86 @@
+/* MAIN NAV */
+.shop-nav {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+  border-bottom: 1px solid #110101;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.shop-logo-img {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.shop-logo span {
+  color: #ff6600;
+}
+
+/* RIGHT SIDE */
+.shop-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ICONS */
+.shop-nav-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #222;
+  transition: 0.3s;
+}
+
+.shop-nav-icon:hover {
+  color: #ff6600;
+  transform: scale(1.1);
+}
+
+/* CART WRAPPER */
+.cart-icon-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+/* BADGE */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+
+  background: #ff6b00;
+  color: #fff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  padding: 3px 6px;
+  border-radius: 50%;
+
+  min-width: 18px;
+  text-align: center;
+}
+
+/* 🔥 BOUNCE ANIMATION */
+@keyframes cartBounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.25); }
+  60% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* APPLY */
+.bounce {
+  animation: cartBounce 0.4s ease;
+}

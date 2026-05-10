@@ -1,0 +1,176 @@
+.logo-wrapper{
+  position:absolute;
+  top:-70px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:1;
+    pointer-events:none;
+}
+
+
+.logo-icon{
+  height:400px; /* same as h-60 */
+}
+
+.register-title{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+.register-right{
+    width:95%;
+    height:100vh;
+    background-size:cover;
+    background-position:right;
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.register-form{
+    width:420px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:100px;
+}
+
+/* TEXT */
+
+.register-title{
+    font-size:70px;
+    font-weight:900;
+    color:white;
+    margin-bottom: -20px;
+}
+
+.register-subtitle{
+    font-size:22px;
+    color:#a1a1aa;
+    margin-bottom: 10px;
+}
+
+.form-fields{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:30px; /* space between inputs */
+}
+
+/* INPUTS */
+
+.register-input{
+    width:100%;
+    background:#27272a;
+    color:#d4d4d8;
+    border-radius:8px;
+    padding:7px 6px;   /* control padding here */
+    font-size:15px;
+    border:1px solid transparent;
+    outline:none;
+    transition:0.2s;
+    font-weight: 500;
+}
+
+.register-input::placeholder{
+    color:#71717a;
+}
+
+.register-input:focus{
+    border-color:#f97316;
+}
+
+/* BUTTON */
+
+.register-button{
+    width:50%;
+    background:#f97316;
+    color:white;
+    font-size:18px;
+    font-weight:900;
+    letter-spacing:2px;
+    padding:8px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    transition:0.2s;
+     margin:0 auto;
+}
+
+.register-button:hover{
+    background:#fb923c;
+}
+
+.register-button:active{
+    background:#ea580c;
+}
+
+/* LOGIN TEXT */
+
+.login-text{
+    text-align:center;
+    color:#a1a1aa;
+    font-size:14px;
+}
+
+.login-text span{
+    color:#f97316;
+    cursor:pointer;
+}
+
+
+/* OR Divider */
+
+.or-divider{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:1px 0 10px;
+    color:#fff;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.or-divider::before,
+.or-divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#3f3f46;
+}
+
+.or-divider span{
+    padding:0 15px;
+}
+
+/* Google Button */
+
+.google-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    background:#ffffff;
+    color:#1f2937;
+
+    border:1px solid #d4d4d8;
+    border-radius:8px;
+
+    padding:8px;
+    font-size:16px;
+    font-weight:500;
+
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.google-btn img{
+    height:22px;
+}
+
+.google-btn:hover{
+    background:#f4f4f5;
+}

@@ -1,0 +1,64 @@
+.ps-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.ps-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.ps-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ps-discount {
+  background: #fff3e6;   /* 🔥 light orange */
+  padding: 10px;
+  border-radius: 8px;
+  color: #ff6a00;
+  font-weight: 500;
+}
+
+.ps-know {
+  color: #ff3f6c;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.ps-total {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ps-terms {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.ps-terms span {
+  color: #ff3f6c;
+  cursor: pointer;
+}
+
+.ps-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: #ff6a00;   /* 🔥 ORANGE */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ps-btn:hover {
+  background: #e65c00;
+}

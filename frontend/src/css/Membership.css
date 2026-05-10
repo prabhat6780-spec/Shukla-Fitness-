@@ -1,0 +1,203 @@
+.membership-page{
+background:#000;
+padding:80px 40px;
+color:white;
+font-family:sans-serif;
+text-align:center;
+}
+
+.membership-title{
+font-size:55px;
+font-weight:900;
+margin-top:-60px;
+margin-bottom:60px;
+}
+
+.membership-title span{
+color:#ff6b00;
+}
+
+/* PLANS */
+
+.plans-container{
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:40px;
+align-items:stretch;   /* ⭐ Equal height cards */
+max-width:1400px;
+margin:auto;
+overflow:visible;  
+}
+
+.plan-card{
+background:rgba(0,0,0,0.6);
+border:2px solid #ff6b00;
+border-radius:20px;
+padding:30px;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:520px;
+
+position:relative;     /* ⭐ REQUIRED */
+overflow:visible;      /* ⭐ VERY IMPORTANT */
+transition:.4s;
+}
+.plan-card:hover{
+transform:translateY(-15px) ;
+box-shadow:0 0 50px rgba(255,107,0,0.8);
+
+}
+
+.plan-card h2{
+margin-bottom:10px;
+}
+
+.plan-card h3{
+color:#ff6b00;
+margin-bottom:20px;
+}
+
+.plan-card ul{
+text-align:left;
+line-height:1.8;
+margin-bottom:20px;
+}
+.plan-card li{
+white-space:normal;
+line-height:1.7;
+}
+
+.cross{
+opacity:.4;
+text-decoration:line-through;
+}
+
+.plan-card button{
+background:#ff6b00;
+border:none;
+padding:12px 25px;
+color:white;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+margin-top:auto;
+}
+
+.plan-card button:hover{
+background:#e65a00;
+}
+
+/* PREMIUM TAG */
+
+.tag1{
+position:absolute;
+top:10px;
+right:10px;
+background:gold;
+color:black;
+padding:6px 18px;
+font-size:12px;
+font-weight:700;
+border-radius:20px;
+z-index:100;
+}
+
+/* TRIAL BOX */
+
+.trial-box{
+margin:80px auto 0;
+padding:50px 60px;
+border-radius:25px;
+
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("/photos/trial.png") center/cover no-repeat;
+
+border:2px solid #ff6b00;
+
+max-width:1100px;
+text-align:center;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:25px;
+
+font-size:26px;
+font-weight:600;
+}
+.trial-box span{
+color:#ff6b00;
+font-weight:700;
+}
+
+.big-btn{
+margin-top:1px;
+background:#ff6b00;
+border:none;
+padding:16px 50px;
+font-size:20px;
+border-radius:35px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.big-btn:hover{
+transform:scale(1.1);
+background:#e65a00;
+}
+
+/* ⭐ VIDEO SECTION */
+
+.membership-video-section{
+width:100%;
+max-width:1200px;
+margin:0 auto 80px auto;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.8);
+}
+
+.membership-video{
+width:100%;
+height:auto;
+display:block;
+}
+
+.basic-bg{
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("/photos/Basic.png") center/cover no-repeat;
+
+border:2px solid #ff6b00;
+border-radius: 20px;
+}
+
+.pro{
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("/photos/pro.png") center/cover no-repeat;
+
+border:2px solid #ff6b00;
+border-radius:20px;
+}
+.elite{
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("/photos/Elite.png") center/cover no-repeat;
+
+border:2px solid #ff6b00;
+border-radius:20px;
+}
+.unlimited{
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("/photos/unlimited.png") center/cover no-repeat;
+
+border:2px solid #ff6b00;
+border-radius:20px;
+}

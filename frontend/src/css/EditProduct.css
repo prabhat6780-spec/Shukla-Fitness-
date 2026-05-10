@@ -1,0 +1,165 @@
+/* ─── CONTAINER ─── */
+.edit-product-container {
+  max-width: 750px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ─── TITLE ─── */
+.edit-product-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff6600;
+}
+
+/* ─── FORM GROUP (MATCH ADD PRODUCT) ─── */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  width: 200px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+/* ─── CHECKBOX ─── */
+.checkbox-group input {
+  transform: scale(1.4);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ─── IMAGE SECTION ─── */
+.edit-product-images {
+  display: flex;
+  gap: 12px;
+  margin: 15px 0 25px;
+  flex-wrap: wrap;
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* REMOVE BUTTON */
+.img-box button {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ─── FILE UPLOAD (MATCH ADD PRODUCT) ─── */
+.file-upload-box {
+  max-width: 600px;     /* control width */
+  margin: 0 auto 30px;
+  border: 2px dashed orange;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.file-upload-box:hover {
+  background: #fff3e6;
+  transform: scale(1.02);
+}
+
+.img-box1 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.img-box1 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-box1 button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ─── BUTTON ─── */
+.submit-btn4 {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn4:hover {
+  background: #e65c00;
+}
+
+.submit-btn4:disabled {
+  background: #999;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

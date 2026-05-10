@@ -1,0 +1,224 @@
+
+.add-product-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.add-product-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.add-product-title svg{
+  color: #ff6600;   /* 🔥 orange title */
+}
+
+.add-product-form input,
+.add-product-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.add-product-form input:focus,
+.add-product-form select:focus {
+  border-color: #ff6600;
+}
+
+.file-upload {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.preview-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.preview-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn5 {
+  width: 100%;
+  padding: 12px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn5:hover {
+  background: #e65c00;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* ─── FORM GROUP ─── */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  width: 200px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.form-group label svg {
+  color: #ff6600;   /* 🔥 orange icons */
+  font-size: 16px;
+}
+
+/* ─── BIG CHECKBOX ─── */
+.checkbox-group input {
+  transform: scale(1.5);   /* ✅ bigger checkbox */
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ─── FILE UPLOAD BOX ─── */
+.file-upload-box {
+  width: 100%;
+   max-width: 500px;   
+  border: 2px dashed #ff6600;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff8f2;
+  transition: 0.3s;
+}
+
+.file-upload-box:hover {
+  background: #fff1e6;
+}
+
+/* hide default input */
+.file-upload-box input {
+  display: none;
+}
+
+/* upload text */
+.upload-text {
+  color: #ff6600;
+  font-weight: 600;
+}
+
+/* preview */
+.preview-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.preview-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* STACK */
+.variant-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* CARD */
+.variant-card-full {
+  background: #f8f9fb;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* FIELD ROW */
+.variant-field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LABEL WITH ICON */
+.variant-label {
+  min-width: 110px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+/* INPUT */
+.variant-field-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* ICON COLOR */
+.variant-label svg {
+  color: #ff6600;
+}
+
+/* REMOVE BUTTON */
+.remove-variant-btn {
+  margin-top: 5px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.remove-variant-btn:hover {
+  background: #e60000;
+}

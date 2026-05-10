@@ -1,0 +1,111 @@
+/* LOGIN BUTTON GROUP */
+
+.login-buttons{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    gap:18px;
+    justify-content:center;   /* ⭐ important */
+    width:100%;
+    margin-top:15px;
+}
+
+
+/* LOGIN BUTTON */
+
+
+.login-btn,
+.otp-btn{
+    width:150px;   /* ⭐ fixed width */
+    height:44px;
+    background:#f97316;
+    color:white;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:1px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    transition:0.25s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.login-btn:hover{ background:#fb923c; }
+.otp-btn:hover{ background:#ea580c; }
+
+
+
+/* FORGOT PASSWORD BOX */
+
+.forgot-password{
+    width:200px;
+    margin:18px auto 0;
+    display:block;
+    text-align:center;
+
+    background:#18181b;
+    border:1px solid #3f3f46;
+    border-radius:8px;
+
+    color:#f97316;
+    font-size:14px;
+    font-weight:600;
+
+    padding:8px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.forgot-password:hover{
+    background:#27272a;
+}
+
+.login-form{
+    width:420px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+     margin-top:-160px; 
+     background:transparent; 
+}
+.logo-wrapper1{
+  pointer-events:none;
+  z-index:0;
+}
+
+
+.login-logo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:-120px;
+}
+
+.login-logo img{
+    height:400px;
+    object-fit:contain;
+}
+.login-heading{
+    text-align: center;
+    margin-bottom:25px;   /* ⭐ control spacing */
+}
+
+
+.login-right{
+    width:95%;
+    height:100vh;
+    background-size:cover;
+    background-position:right;
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:flex-start;   /* ⭐ push everything to TOP */
+
+    padding-top:10px;
+    overflow-y:auto;   
+}

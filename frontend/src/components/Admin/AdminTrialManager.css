@@ -1,0 +1,236 @@
+/* 🌐 Wrapper */
+.atm-wrap {
+  padding: 30px 20px;
+  background: #f5f7fa;   /* 🔥 light background */
+  color: #222;
+  min-height: 100vh;
+  border-radius: 15px;
+}
+
+/* 🎯 Title */
+.atm-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #ff6b00;
+}
+
+/* 📦 Card (WHITE TAB STYLE) */
+.atm-card {
+  background: #ffffff; /* 🔥 MAIN CHANGE */
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.atm-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* ── SEARCH ── */
+.atm-search-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.atm-input {
+  background: #f9fafc; /* 🔥 light input */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #222;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  flex: 1;
+  transition: 0.25s;
+}
+
+.atm-input:focus {
+  border-color: #ff6b00;
+  box-shadow: 0 0 0 2px rgba(255,107,0,0.15);
+}
+
+/* 🔎 Button */
+.atm-btn-search {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.atm-btn-search:hover {
+  background: #e65a00;
+}
+
+/* 🔍 Result */
+.atm-search-result {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.atm-search-result.found {
+  background: #e8fff3;
+  border: 1px solid #00c37a;
+  color: #0f5132;
+}
+
+.atm-search-result.error {
+  background: #ffe9e9;
+  border: 1px solid #ff4d4d;
+  color: #842029;
+}
+
+.atm-has-trial {
+  font-size: 12px;
+  color: #ff6b00;
+}
+
+/* ── FORM ── */
+.atm-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.atm-field {
+  flex: 1;
+  min-width: 160px;
+}
+
+.atm-field label {
+  font-size: 15px;
+  color: #666;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* Select */
+.atm-select {
+  background: #f9fafc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #222;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+}
+
+.atm-select:focus {
+  border-color: #ff6b00;
+}
+
+/* Checkbox */
+.atm-checkbox-row {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.atm-checkbox-row input {
+  accent-color: #ff6b00;
+}
+
+/* 🚀 Grant Button */
+.atm-btn-grant {
+  background: linear-gradient(135deg, #ff6b00, #ff8c42);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.atm-btn-grant:hover {
+  opacity: 0.9;
+}
+
+/* ── TABLE ── */
+.atm-table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.atm-btn-refresh {
+  background: #f1f1f1;
+  color: #444;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.atm-btn-refresh:hover {
+  background: #ff6b00;
+  color: white;
+}
+
+/* Table */
+.atm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.atm-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 12px;
+  color: #777;
+  border-bottom: 1px solid #eee;
+}
+
+.atm-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Hover */
+.atm-table tr:hover {
+  background: #fff5ef;
+}
+
+/* Plan badge */
+.atm-plan-pill {
+  background: #fff3e6;
+  color: #ff6b00;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Status */
+.atm-status.active {
+  background: #e6fff2;
+  color: #00a86b;
+}
+
+.atm-status.expired {
+  background: #ffe6e6;
+  color: #ff4d4d;
+}
+
+/* Revoke */
+.atm-btn-revoke {
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.atm-btn-revoke:hover {
+  background: #ff4d4d;
+  color: white;
+}

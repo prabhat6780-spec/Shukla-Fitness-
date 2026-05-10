@@ -1,0 +1,15 @@
+.adminMain{
+position:relative;
+
+margin-top:75px;     /* navbar height */
+margin-left:270px;   /* sidebar width */
+
+min-height:calc(100vh - 75px);
+padding:40px;
+
+/* ⭐ BACKGROUND ONLY HERE */
+background-image:url("/photos/Adminbg.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
