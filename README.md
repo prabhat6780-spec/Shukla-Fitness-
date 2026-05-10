@@ -76,13 +76,21 @@ An AI-powered gym management and fitness planning platform built using the MERN 
 
 ## 🔧 Backend Setup
 
+Navigate to the Backend directory and install dependencies:
+
 ```bash
 cd Backend
 npm install
 npx nodemon server.js
+```
 
-The backend server will start on:
- http://localhost:3000
+The backend server will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
 
 ## 💻 Frontend Setup
 
@@ -92,9 +100,16 @@ Navigate to the frontend directory and install dependencies:
 cd frontend
 npm install
 npm run dev
+```
 
 The frontend application will run on:
-  http://localhost:5173
+
+```bash
+http://localhost:5173
+```
+
+
+
 
 # 📂 Project Structure
 
